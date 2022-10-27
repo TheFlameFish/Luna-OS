@@ -1,1 +1,1 @@
-# Luna-OS is a GUI-based operating system made for computers added to Minecraft by a mod called "CC: Tweaked". More information will be added soon, but for  now this readMe will remain as barebones as the OS in it's current state.
+ Luna-OS is a GUI-based operating system made for computers added to Minecraft by a mod called "CC: Tweaked". More information will be added soon, but for  now this readMe will remain as barebones as the OS in it's current state.
