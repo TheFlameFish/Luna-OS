@@ -1,0 +1,6 @@
+[submodule "deps/Basalt"]
+	path = deps/Basalt
+	url = https://github.com/Pyroxenium/Basalt
+[submodule "deps/AUKit"]
+	path = deps/AUKit
+	url = https://github.com/Wojbie/AUKit
