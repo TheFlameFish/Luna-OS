@@ -1,4 +1,4 @@
-local basalt = require("basalt")
+local basalt = require("../../basalt")
 
 local main = basalt.createFrame("main")
     :setBackground(colors.lightGray)
