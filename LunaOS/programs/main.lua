@@ -2,6 +2,8 @@ args = {...}
 local user = args[1]
 userDir = ("users/"..user)
 
+local luna = {}
+
 local basalt = require("../../basalt")
 
 local main = basalt.createFrame("main")
@@ -47,4 +49,13 @@ function fillTaskbar()
 
 end
 fillTaskbar()
+
+
+
+-- luna api functions --
+
+function luna.changeSize(sizeX,sizeY)
+    
+end
+
 basalt.autoUpdate()
