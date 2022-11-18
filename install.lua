@@ -40,5 +40,6 @@ os.sleep(3)
 local mainRequest = http.get("https://raw.githubusercontent.com/TheFlameFish/Luna-OS/Dev/LunaOS/programs/main.lua")
 
 local mainFile = fs.open("LunaOS/programs/main.lua", "w")
+print(mainRequest.readAll)
 mainFile.write(mainRequest.readAll())
 mainRequest.close()
