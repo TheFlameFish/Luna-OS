@@ -41,7 +41,9 @@ local mainRequest = http.get("https://raw.githubusercontent.com/TheFlameFish/Lun
 
 local mainFile = fs.open("LunaOS/programs/main.lua", "w")
 
-for i,o in ipairs(mainRequest:readAll()) do
+local main = mainRequest:readAll()
+
+for i,o in ipairs(main) do
     mainFile.writeLine(o)
     print(o)
     os.sleep(0.1)
