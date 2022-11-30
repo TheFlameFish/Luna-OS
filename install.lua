@@ -41,13 +41,19 @@ local mainRequest = http.get("https://raw.githubusercontent.com/TheFlameFish/Lun
 
 local mainFile = fs.open("LunaOS/programs/main.lua", "w")
 
-local main = mainRequest.readAll()
---print(mainRequest.readAll())
 
-for i,o in ipairs(main) do
+
+while true do 
+    local o = mainRequest.readLine()
+    if o = nil then
+        mainRequest.close()
+        return
+    end
     mainFile.writeLine(o)
     print(o)
     os.sleep(0.1)
+    
 end
 
-mainRequest.close()
+
+
