@@ -38,24 +38,28 @@ print("Getting remaining files from Github...")
 os.sleep(3)
 
 function getFile(url,path)
-local mainRequest = http.get(url)
+    local mainRequest = http.get(url)
 
-local mainFile = fs.open(path, "w")
+    local mainFile = fs.open(path, "w")
 
 
 
-while true do 
-    local o = mainRequest.readLine()
-    if o == nil then
-        mainRequest.close()
-        mainFile.close()
-        return
+    while true do 
+        local o = mainRequest.readLine()
+        if o == nil then
+            mainRequest.close()
+            mainFile.close()
+            return
+        end
+        mainFile.writeLine(o)
+        print(o)
+        os.sleep(0.1)
+        
     end
-    mainFile.writeLine(o)
-    print(o)
-    os.sleep(0.1)
-    
-end
+    shell.run("clear")
+    print("Downloaded "..path.." from "..url..".")
+    os.sleep(0.5)
+    shell.run("clear")
 end
 getFile("https://raw.githubusercontent.com/TheFlameFish/Luna-OS/Dev/LunaOS/programs/main.lua","LunaOS/programs/main.lua")
 
