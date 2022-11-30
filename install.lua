@@ -37,14 +37,15 @@ os.sleep(1)
 print("Getting remaining files from Github...")
 os.sleep(3)
 
-local mainRequest = http.get("https://raw.githubusercontent.com/TheFlameFish/Luna-OS/Dev/LunaOS/programs/main.lua")
+function getFile(url,path)
+local mainRequest = http.get(url)
 
-local mainFile = fs.open("LunaOS/programs/main.lua", "w")
+local mainFile = fs.open(, "w")
 
 
 
 while true do 
-    local o = mainRequest.readLine()
+    local o = mainRequest.readLine(path)
     if o == nil then
         mainRequest.close()
         mainFile.close()
@@ -55,6 +56,8 @@ while true do
     os.sleep(0.1)
     
 end
+end
+getFile("https://raw.githubusercontent.com/TheFlameFish/Luna-OS/Dev/LunaOS/programs/main.lua","LunaOS/programs/main.lua")
 
 
 
