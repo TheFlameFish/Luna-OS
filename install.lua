@@ -59,5 +59,5 @@ end
 end
 getFile("https://raw.githubusercontent.com/TheFlameFish/Luna-OS/Dev/LunaOS/programs/main.lua","LunaOS/programs/main.lua")
 
-
+getFile("https://raw.githubusercontent.com/TheFlameFish/Luna-OS/Dev/LunaOS/programs/newUser.lua","LunaOS/programs/newUser.lua")
 
