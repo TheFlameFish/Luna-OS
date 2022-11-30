@@ -45,7 +45,7 @@ local mainFile = fs.open(path, "w")
 
 
 while true do 
-    local o = mainRequest.readLine(path)
+    local o = mainRequest.readLine()
     if o == nil then
         mainRequest.close()
         mainFile.close()
