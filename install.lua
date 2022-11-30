@@ -40,7 +40,7 @@ os.sleep(3)
 function getFile(url,path)
 local mainRequest = http.get(url)
 
-local mainFile = fs.open(, "w")
+local mainFile = fs.open(path, "w")
 
 
 
