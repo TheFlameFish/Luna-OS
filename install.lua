@@ -47,6 +47,7 @@ while true do
     local o = mainRequest.readLine()
     if o == nil then
         mainRequest.close()
+        mainFile.close()
         return
     end
     mainFile.writeLine(o)
