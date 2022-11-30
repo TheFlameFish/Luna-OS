@@ -45,7 +45,7 @@ local mainFile = fs.open("LunaOS/programs/main.lua", "w")
 
 while true do 
     local o = mainRequest.readLine()
-    if o = nil then
+    if o == nil then
         mainRequest.close()
         return
     end
