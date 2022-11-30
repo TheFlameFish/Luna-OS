@@ -43,7 +43,6 @@ local mainFile = fs.open("LunaOS/programs/main.lua", "w")
 
 local main = {}
 --print(mainRequest.readAll())
-main.insert(mainRequest.readAll())
 
 for i,o in ipairs(main) do
     mainFile.writeLine(o)
