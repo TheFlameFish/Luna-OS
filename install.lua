@@ -1,4 +1,12 @@
+--Download Basalt
+
+print("Downloading Basalt api")
+os.sleep(0.5)
+shell.run("wget run https://basalt.madefor.cc/install.lua source")
+
+
 -- Make directories
+
 print("creating directories...")
 os.sleep(1)
 print("LunaOS/programs")
